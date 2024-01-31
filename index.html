@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>API</title>
+</head>
+<body>
+  <table id="tételekTábla">
+    <thead>
+      <tr>
+        <th>Azonosító</th>
+        <th>Név</th>
+        <th>Műveletek</th>
+      </tr>
+    </thead>
+    <tbody id="tételekTörzs"></tbody>
+  </table>
+  
+  <div id="gombok">
+    <button id="létrehozásGomb">Új adat</button>
+    <button id="szerkesztésGomb" style="display: none;">Adatok szerkesztése</button>
+    <button id="törlésGomb" style="display: none;">Adat törlése</button>
+  </div>
+  
+  <form id="létrehozásŰrlap" style="display: none;">
+    <label for="tételNév"> Neve:</label>
+    <input type="text" id="tételNév" required>
+    <button type="button" id="mentésGomb">Mentés</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
